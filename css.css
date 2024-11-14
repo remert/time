@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.time-block {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px 0;
+    background-color: lightgreen;
+}
+
+.current {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { background-color: lightgreen; }
+    50% { background-color: yellow; }
+}
+
+
