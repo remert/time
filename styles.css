@@ -2,6 +2,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.banner {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
 .schedule {
     display: flex;
     flex-wrap: wrap;
@@ -19,11 +27,38 @@ body {
     text-align: center;
 }
 
-.current {
-    animation: blink 1s infinite;
+.current-green {
+    animation: blink-green 1s infinite;
 }
 
-@keyframes blink {
+.current-yellow {
+    animation: blink-yellow 1s infinite;
+}
+
+.current-orange {
+    animation: blink-orange 1s infinite;
+}
+
+.current-red {
+    animation: blink-red 1s infinite;
+}
+
+@keyframes blink-green {
+    0%, 100% { background-color: lightgreen; }
+    50% { background-color: green; }
+}
+
+@keyframes blink-yellow {
     0%, 100% { background-color: lightgreen; }
     50% { background-color: yellow; }
+}
+
+@keyframes blink-orange {
+    0%, 100% { background-color: lightgreen; }
+    50% { background-color: orange; }
+}
+
+@keyframes blink-red {
+    0%, 100% { background-color: lightgreen; }
+    50% { background-color: red; }
 }
