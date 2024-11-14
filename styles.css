@@ -4,16 +4,19 @@ body {
 
 .schedule {
     display: flex;
-    flex-direction: column;
-    width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
 }
 
 .time-block {
-    padding: 10px;
+    flex: 1 1 30%;
+    padding: 20px;
+    margin: 10px;
     border: 1px solid #000;
-    margin: 5px 0;
     background-color: lightgreen;
+    text-align: center;
 }
 
 .current {
